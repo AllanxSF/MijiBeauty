@@ -1,6 +1,28 @@
 .navbar {
-  background-color: #ce95b1;
+  background-color: #b9829d;
   /* Rosado pastel */
+}
+
+.card {
+  width: auto;
+  height: auto;
+  display: flexbox;
+  margin: 30px;
+}
+
+h1 {
+  font-size: xx-large;
+  color: #7a1147;
+  text-align: center;
+  background-color: #f3f0f2;
+  background-size: contain;
+}
+
+
+body {
+  background-color: #ece2e9;
+  background-size: cover;
+
 }
 
 .logo-left {
@@ -21,12 +43,11 @@
   font-weight: bold;
   font-size: 1.5rem;
   color: #cc3366 !important;
-  /* Rosa fuerte */
+
 }
 
 .nav-link {
   color: #66334d !important;
-  /* Vino suave */
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -38,7 +59,6 @@
 .dropdown-menu {
   border-radius: 1rem;
   background-color: #fff0f5;
-  /* Lila pastel */
 }
 
 .dropdown-item:hover {
@@ -46,7 +66,7 @@
   color: #cc3366;
 }
 
-/* Botón Mi Cuenta */
+
 .btn-account {
   border-radius: 20px;
   background-color: #cc3366;
@@ -88,10 +108,10 @@ footer {
   margin-top: auto;
 }
 
-.card,
 .card-contacto,
 .card-servicio {
-  margin: 0 !important;
+  margin: 20 !important;
+  display: flexbox;
 }
 
 .card-contacto {
@@ -170,6 +190,6 @@ footer {
   margin-bottom: 20px;
 }
 
-.obligatorio{
+.obligatorio {
   color: red;
 }
