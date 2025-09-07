@@ -27,26 +27,25 @@ function validar_registro() {
 
     if (nombre.value.trim() == "") {
         alert("ingrese un nombre");
-        return false;
-    }
-    else if (correo.value.trim() == "") {
+    } else if (correo.value.trim() == "") {
         alert("ingrese un correo");
-        return false;
 
-    } else if (!correo.value.trim().endsWith("@gmail.com") && !correo.value.trim().endsWith("@duoc.cl") && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
+    } else if (!correo.value.trim().endsWith("@gmail.com")
+        && !correo.value.trim().endsWith("@duoc.cl")
+        && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
         alert("Correo no válido");
 
     } else if (contraseña.value.trim() == "") {
         alert("ingrese una contraseña");
-        return false;
 
     } else if (contraseña2.value.trim() == "") {
         alert("ingrese una contraseña");
-        return false;
+
+    } else if (contraseña.value.length < 4 || contraseña.value.length > 10) {
+        alert("La contraseña debe tener entre 4 y 10 caracteres");
 
     } else if (contraseña2.value.trim() != contraseña.value.trim()) {
         alert("Las contraseñas no coinciden");
-        return true;
 
     } else {
         nombresR.push(nombre.value);
@@ -87,11 +86,19 @@ function validar_contacto() {
 
     if (nombre.value.trim() == "") {
         alert("ingrese un nombre");
-    }
-    else if (correo.value.trim() == "") {
-        alert("ingrese un correo");
 
-    } else if (!correo.value.trim().endsWith("@gmail.com") && !correo.value.trim().endsWith("@duoc.cl") && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
+    } else if (nombre.value.length > 100) {
+        alert("nombre demasiado largo");
+
+    } else if (correo.value.trim() == "") {
+        alert("ingrese un correo");
+    }
+    else if (correo.value.length > 100) {
+        alert("correo demasiado largo");
+
+    } else if (!correo.value.trim().endsWith("@gmail.com")
+        && !correo.value.trim().endsWith("@duoc.cl")
+        && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
         alert("Correo no válido");
 
     } else if (asunto.value.trim() == "") {
@@ -99,6 +106,9 @@ function validar_contacto() {
 
     } else if (descripcion.value.trim() == "") {
         alert("ingrese una descripcion");
+
+    } else if (descripcion.value.length > 500) {
+        alert("descripcion demasiado largo");
 
     } else {
         nombresC.push(nombre.value);
@@ -115,7 +125,6 @@ function validar_contacto() {
         console.log("Asuntos registrados:", asuntoC);
         console.log("Descripcioines registradas:", descripcionC);
     }
-
 }
 
 function limpiarC() {
@@ -124,7 +133,6 @@ function limpiarC() {
     telefono.value = "";
     asunto.value = "";
     descripcion.value = "";
-
 }
 
 function validar_inicio() {
@@ -134,12 +142,23 @@ function validar_inicio() {
 
     if (correo.value.trim() == "") {
         alert("ingrese un correo");
-    } else if (!correo.value.trim().endsWith("@gmail.com") && !correo.value.trim().endsWith("@duoc.cl") && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
+        return false;
+
+    } else if (!correo.value.trim().endsWith("@gmail.com")
+        && !correo.value.trim().endsWith("@duoc.cl")
+        && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
         alert("Correo no válido");
         return false;
-    }
-    else if (contraseña.value.trim() == "") {
+
+    } else if (correo.value.length > 100) {
+        alert("correo demasiado largo");
+
+    } else if (contraseña.value.trim() == "") {
         alert("ingrese una contraseña");
+        return false;
+
+    } else if (contraseña.value.length < 4 || contraseña.value.length > 10) {
+        alert("La contraseña debe tener entre 4 y 10 caracteres");
         return false;
 
     } else {
@@ -155,8 +174,15 @@ function validar_recuperar() {
 
     if (correo.value.trim() === "") {
         alert("Ingrese un correo");
-    } else if (!correo.value.trim().endsWith("@gmail.com") && !correo.value.trim().endsWith("@duoc.cl") && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
+
+    } else if (correo.value.length > 100) {
+        alert("correo demasiado largo");
+
+    } else if (!correo.value.trim().endsWith("@gmail.com")
+        && !correo.value.trim().endsWith("@duoc.cl")
+        && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
         alert("Correo no válido");
+
     } else {
         correoN.push(correo.value.trim());
         alert("Correo válido: " + correo.value);
