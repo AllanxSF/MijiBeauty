@@ -174,4 +174,21 @@ abbr[title="Campo Obligatorio"] {
   color: red;       /* Cambia el color del asterisco */
 }
 
+.contenedor-grid-inicio{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
 
+.input{
+  text-align: left;
+  margin-top: 10px;
+}
+
+.contenedor-grid-restablecer{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-top: 20px;
+}

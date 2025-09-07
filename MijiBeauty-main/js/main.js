@@ -12,7 +12,7 @@ let telefonoC = [];
 let asuntoC = [];
 let descripcionC = [];
 
-let contraseñaI= [];
+let contraseñaI = [];
 let correosI = [];
 
 let correoN = [];
@@ -32,6 +32,9 @@ function validar_registro() {
     else if (correo.value.trim() == "") {
         alert("ingrese un correo");
         return false;
+
+    } else if (!correo.value.trim().endsWith("@gmail.com") && !correo.value.trim().endsWith("@duoc.cl") && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
+        alert("Correo no válido");
 
     } else if (contraseña.value.trim() == "") {
         alert("ingrese una contraseña");
@@ -88,6 +91,9 @@ function validar_contacto() {
     else if (correo.value.trim() == "") {
         alert("ingrese un correo");
 
+    } else if (!correo.value.trim().endsWith("@gmail.com") && !correo.value.trim().endsWith("@duoc.cl") && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
+        alert("Correo no válido");
+
     } else if (asunto.value.trim() == "") {
         alert("ingrese un asunto");
 
@@ -121,33 +127,38 @@ function limpiarC() {
 
 }
 
-function validar_inicio(){
+function validar_inicio() {
 
     let correo = document.getElementById("correo");
     let contraseña = document.getElementById("contraseña");
 
     if (correo.value.trim() == "") {
         alert("ingrese un correo");
+    } else if (!correo.value.trim().endsWith("@gmail.com") && !correo.value.trim().endsWith("@duoc.cl") && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
+        alert("Correo no válido");
         return false;
     }
     else if (contraseña.value.trim() == "") {
         alert("ingrese una contraseña");
         return false;
 
-    }else {
+    } else {
         contraseñasI.push(contraseña.value);
         correosI.push(correo.value);
-        
         return true;
     }
 }
 
-function validar_recuperar(){
-    if (correo.value.trim() == "") {
-        alert("ingrese un correo");
+function validar_recuperar() {
+    let correo = document.getElementById("correo");
+    let correoN = [];
 
-    }else {
-        correoN.push(correo.value);
-        
+    if (correo.value.trim() === "") {
+        alert("Ingrese un correo");
+    } else if (!correo.value.trim().endsWith("@gmail.com") && !correo.value.trim().endsWith("@duoc.cl") && !correo.value.trim().endsWith("@profesor.duoc.cl")) {
+        alert("Correo no válido");
+    } else {
+        correoN.push(correo.value.trim());
+        alert("Correo válido: " + correo.value);
     }
 }
