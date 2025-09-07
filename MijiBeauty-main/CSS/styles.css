@@ -201,15 +201,15 @@ footer {
     text-align: center;
   }
 
-  .card-text-producto{
+.card-text-producto{
     text-align: center;
     margin-top: 10px;
     overflow: hidden;
-  }
+}
 
-  .card-img-producto{
+.card-img-producto{
     width: 100%; /* esto adaptara y usara todo el espacio que tiene disponible por el tamaño de la card*/
     height: 200px;
     object-fit: cover;
     display: block;
-  }
+}
