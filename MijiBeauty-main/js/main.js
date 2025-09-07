@@ -12,6 +12,11 @@ let telefonoC = [];
 let asuntoC = [];
 let descripcionC = [];
 
+let contraseñaI= [];
+let correosI = [];
+
+let correoN = [];
+
 function validar_registro() {
     let correo = document.getElementById("correo");
     let nombre = document.getElementById("nombre");
@@ -22,18 +27,23 @@ function validar_registro() {
 
     if (nombre.value.trim() == "") {
         alert("ingrese un nombre");
+        return false;
     }
     else if (correo.value.trim() == "") {
         alert("ingrese un correo");
+        return false;
 
     } else if (contraseña.value.trim() == "") {
         alert("ingrese una contraseña");
+        return false;
 
     } else if (contraseña2.value.trim() == "") {
         alert("ingrese una contraseña");
+        return false;
 
     } else if (contraseña2.value.trim() != contraseña.value.trim()) {
         alert("Las contraseñas no coinciden");
+        return true;
 
     } else {
         nombresR.push(nombre.value);
@@ -109,4 +119,35 @@ function limpiarC() {
     asunto.value = "";
     descripcion.value = "";
 
+}
+
+function validar_inicio(){
+
+    let correo = document.getElementById("correo");
+    let contraseña = document.getElementById("contraseña");
+
+    if (correo.value.trim() == "") {
+        alert("ingrese un correo");
+        return false;
+    }
+    else if (contraseña.value.trim() == "") {
+        alert("ingrese una contraseña");
+        return false;
+
+    }else {
+        contraseñasI.push(contraseña.value);
+        correosI.push(correo.value);
+        
+        return true;
+    }
+}
+
+function validar_recuperar(){
+    if (correo.value.trim() == "") {
+        alert("ingrese un correo");
+
+    }else {
+        correoN.push(correo.value);
+        
+    }
 }
