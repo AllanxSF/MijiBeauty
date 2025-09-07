@@ -170,6 +170,6 @@ footer {
   margin-bottom: 20px;
 }
 
-.obligatorio{
-  color: red;
+abbr[title="Campo Obligatorio"] {
+  color: red;       /* Cambia el color del asterisco */
 }

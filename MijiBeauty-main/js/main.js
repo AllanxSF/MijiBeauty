@@ -4,6 +4,11 @@ let correosR = [];
 let contraseñasR = [];
 let contraseñas2R = [];
 
+let nombresC = [];
+let correosC = [];
+let asuntoC = [];
+let descripcionC = [];
+
 function validar_registro() {
     let correo = document.getElementById("correo");
     let nombre = document.getElementById("nombre");
@@ -43,5 +48,30 @@ function limpiar() {
 }
 
 function validar_contacto() {
-    alert("Ingreso correcto");
+
+    let correo = document.getElementById("correo");
+    let nombre = document.getElementById("nombre");
+    let asunto = document.getElementById("asunto");
+    let descripcion = document.getElementById("descripcion");
+
+    if (nombre.value.trim() == "") {
+        alert("ingrese un nombre");
+    }
+    else if (correo.value.trim() == "") {
+        alert("ingrese un correo");
+
+    } else if (asunto.value.trim() == "") {
+        alert("ingrese un asunto");
+
+    } else if (descripcion.value.trim() == "") {
+        alert("ingrese una descripcion");
+
+    } else {
+        nombresC.push(nombre.value);
+        correosC.push(correo.value);
+        asuntoC.push(asunto.value);
+        descripcionC.push(descripcion.value);
+        alert("Enviado con exito");
+    }
+    
 }
