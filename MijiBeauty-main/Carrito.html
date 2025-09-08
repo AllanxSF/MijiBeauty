@@ -11,12 +11,12 @@
     
     <div id="navbar"></div>
 
-    <main id="Carrito" class="container mt-5">
+    <main id="carrito" class="container mt-5">
         <h1 class="titulo-carrito">Mi carrito de compras</h1>
         <h2 class="subtitulo-carrito">Aquí podrás ver y gestionar tu carrito de compras</h2>
         <div class="row">
             <div class="col-md-4">
-                <div id="card-carrito" class="card mb-4">
+                <div id="card-carrito" class="card">
                     <div class="row g-0">
                         <div class="col-md-4">
                         <img src="..." class="img-fluid rounded-start" alt="...">
@@ -36,12 +36,15 @@
 
             </div>  
         </div>
-        <div id="detalle-card" class="col-md-4">
+        <div id="detalle-card" class="mt-5">
             <div class="card p-3">
                 <h4>TOTAL</h4>
                 <span id="precio-total" class="precio-total-carrito">milmillonesa</span>
-                <p class="mb-3">Introduzca codigo de descuento</p>
-                <input type="text">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ingrese codigo">
+                    <button class="btn btn-primary" type="button">Aplicar</button>
+                </div>
+                <button class="btn btn-primary" type="button">Pagar</button>
             </div>
         </div>
     </main>
