@@ -245,25 +245,25 @@ const productos = {
         descripcion: "El Cosrx Advanced Snail 96 Mucin Power Essence es un sérum coreano que contiene un 96% de filtrado de secreción de caracol, conocido por sus propiedades regeneradoras y calmantes. Este producto hidrata profundamente la piel, mejora su textura, reduce manchas oscuras y líneas finas, y fortalece la barrera cutánea, todo sin dejar sensación pegajosa. Es adecuado para todo tipo de piel, incluyendo las sensibles, y se utiliza después de la limpieza y tonificación, aplicando una pequeña cantidad en el rostro y dando ligeros toques para facilitar su absorción.",
         imagen: "CSS/img/producto9.webp"
     },
-    
+
 }
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  const parametor = new URLSearchParams(window.location.search);
-  const idProducto = parametor.get("id");
-  const producto = productos[idProducto];
+    const parametor = new URLSearchParams(window.location.search);
+    const idProducto = parametor.get("id");
+    const producto = productos[idProducto];
 
-  if (producto) {
+    if (producto) {
 
-    document.getElementById("nombre-producto").textContent = producto.nombre;
-    document.getElementById("imagen-producto").src = producto.imagen;
-    document.getElementById("precio-producto").textContent = "$" + producto.precio;
-    document.getElementById("descripcion-producto").textContent = producto.descripcion;
-  } else {
+        document.getElementById("nombre-producto").textContent = producto.nombre;
+        document.getElementById("imagen-producto").src = producto.imagen;
+        document.getElementById("precio-producto").textContent = "$" + producto.precio;
+        document.getElementById("descripcion-producto").textContent = producto.descripcion;
+    } else {
 
-    document.getElementById("detalle-producto").textContent = "Producto no encontrado";
-  }
+        document.getElementById("detalle-producto").textContent = "Producto no encontrado";
+    }
 });
 
 

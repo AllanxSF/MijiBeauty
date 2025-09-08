@@ -227,21 +227,6 @@ abbr[title="Campo Obligatorio"] {
   color: black;
 }
 
-.card-producto {
-  width: 20rem;
-  border: 0.5px solid #ef93ff;
-  padding: 20px;
-  margin: 10px;
-  background-color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  border-radius: 10px;
-
-}
-
 .card-title-producto {
   text-align: center;
 }
@@ -386,4 +371,33 @@ iframe {
   cursor: pointer;
   margin-top: 10px;
 }
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.card-producto {
+  width: 20rem;              /* Tamaño fijo aproximado */
+  max-width: 300px;          /* Limite de ancho en pantallas chicas */
+  border: 1px solid #ef93ff; /* Unificamos el borde al de la segunda */
+  padding: 20px;             /* Usamos el padding mayor */
+  margin: 10px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card-producto:hover {
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
+}
+
+
 
