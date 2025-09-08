@@ -83,15 +83,15 @@ const productos = {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  const params = new URLSearchParams(window.location.search);
-  const idProducto = params.get("id");
+  const parametor = new URLSearchParams(window.location.search);
+  const idProducto = parametor.get("id");
   const producto = productos[idProducto];
 
   if (producto) {
 
     document.getElementById("nombre-producto").textContent = producto.nombre;
     document.getElementById("imagen-producto").src = producto.imagen;
-    document.getElementById("precio-producto").textContent = producto.precio + "$";
+    document.getElementById("precio-producto").textContent = "$" + producto.precio;
     document.getElementById("descripcion-producto").textContent = producto.descripcion;
   } else {
 
