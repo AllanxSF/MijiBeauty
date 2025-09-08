@@ -100,14 +100,28 @@ body {
 
 /*pie de pagina */
 
+/* Footer */
 footer {
-  background-color: #ef93ff;
-  color: #fff;
-  padding: 20px 0;
+  background-color: #92e0ee;
+  color: white;
   text-align: center;
-  width: 100%;
-  position: relative;
-  margin-top: auto;
+  padding: 15px 10px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-links a {
+  color: #cc3366;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.p-footer {
+  color: #222;
 }
 
 /*pestaña contacto */
@@ -240,7 +254,6 @@ abbr[title="Campo Obligatorio"] {
 
 .card-img-producto {
   width: 100%;
-  /* esto adaptara y usara todo el espacio que tiene disponible por el tamaño de la card*/
   height: 200px;
   object-fit: cover;
   display: block;
@@ -280,8 +293,6 @@ abbr[title="Campo Obligatorio"] {
 
 .card-totalp {
   padding: 20px;
-
-  /* Cambia el color del asterisco */
 }
 
 .contenedor-grid-inicio {
@@ -331,34 +342,20 @@ a {
   color: #7a1147;
   text-decoration: underline;
   font-weight: bold;
-
 }
 
-.container-fluid{
-  align-items: center;
-
-}
-
-.contenedor-productos {
-  display: flex;
-  flex-wrap: wrap;       /* permite que las cards bajen a otra fila si no caben */
-  justify-content: center; /* centra horizontalmente las cards */
-  gap: 20px;             /* espacio entre tarjetas */
-  padding: 20px;
-}
-
-.card-producto {
-  width: 280px;           /* ancho fijo de cada card */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* botón al fondo */
+/*video*/
+iframe {
+  width: 1100px;
+  height: 1000px;
+  align-self: center;
 }
 
 .detalle-container {
   display: flex;
   flex-wrap: wrap;        /* permite que las columnas se apilen en pantallas pequeñas */
   gap: 20px;
-  align-items: center;
+  align-items: center; 
   padding: 0 20px;
 }
 
@@ -389,3 +386,4 @@ a {
   cursor: pointer;
   margin-top: 10px;
 }
+
