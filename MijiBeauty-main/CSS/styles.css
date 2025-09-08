@@ -19,7 +19,7 @@
   height: 40px;
 }
 
-
+/*letras de la marca*/
 .navbar-brand {
   font-weight: bold;
   font-size: 1.5rem;
@@ -98,6 +98,7 @@ html, body {
 }
 
 body {
+  
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* ocupa toda la pantalla */
@@ -136,7 +137,6 @@ footer {
   color: #222;
   margin-bottom: 5px;
 }
-
 
 
 /*pestaña contacto */
@@ -342,6 +342,15 @@ a {
   color: #7a1147;
   text-decoration: underline;
   font-weight: bold;
+}
+
+
+.card-body{
+  padding: 10px auto;
+  margin: 20px auto;
+  align-content: space-between;
+  display: inline-flexbox;
+  
 }
 
 /*video*/
