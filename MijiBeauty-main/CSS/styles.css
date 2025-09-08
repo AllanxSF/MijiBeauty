@@ -19,7 +19,7 @@
   height: 40px;
 }
 
-
+/*letras de la marca*/
 .navbar-brand {
   font-weight: bold;
   font-size: 1.5rem;
@@ -76,7 +76,7 @@
 }
 
 input.form-control {
-  border-radius: 20px;  
+  border-radius: 20px;
 }
 
 /*titulos de la pagina*/
@@ -90,8 +90,8 @@ h1 {
 
 /*fondo*/
 body {
-  background: 
-    linear-gradient(rgba(236, 226, 233, 0.2), rgba(236, 226, 233, 0.9)), 
+  background:
+    linear-gradient(rgba(236, 226, 233, 0.2), rgba(236, 226, 233, 0.9)),
     url('img/Fondo.jpg');
   background-size: cover;
   background-position: center;
@@ -109,6 +109,7 @@ footer {
   position: relative;
   margin-top: auto;
 }
+
 /*pestaña contacto */
 .card-contacto,
 .card-servicio {
@@ -198,7 +199,7 @@ footer {
 
 
 /*pestaña datos*/
-.contenedor-datos{
+.contenedor-datos {
   width: 400px auto;
   height: 400px auto;
   background-color: #f3e9f0af;
@@ -211,7 +212,7 @@ footer {
   align-items: center;
 }
 
-.card{
+.card {
   width: 450px;
   height: 600px;
   display: inline-flex;
@@ -219,8 +220,15 @@ footer {
 }
 
 a {
-    color: #7a1147;
-    text-decoration: underline;
-    font-weight: bold;
-    
+  color: #7a1147;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card-body{
+  padding: 10px auto;
+  margin: 20px auto;
+  align-content: space-between;
+  display: inline-flexbox;
+  
 }
