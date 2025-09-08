@@ -91,17 +91,19 @@ h1 {
 /*fondo*/
 
 /* Asegura que html y body ocupen toda la altura */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  
+
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* ocupa toda la pantalla */
+  min-height: 100vh;
+  /* ocupa toda la pantalla */
   background:
     linear-gradient(rgba(236, 226, 233, 0.2), rgba(236, 226, 233, 0.9)),
     url('img/Fondo.jpg');
@@ -110,7 +112,8 @@ body {
 }
 
 main {
-  flex: 1; /* fuerza a que main ocupe el espacio disponible */
+  flex: 1;
+  /* fuerza a que main ocupe el espacio disponible */
   padding: 20px;
 }
 
@@ -345,12 +348,12 @@ a {
 }
 
 
-.card-body{
+.card-body {
   padding: 10px auto;
   margin: 20px auto;
   align-content: space-between;
   display: inline-flexbox;
-  
+
 }
 
 /*video*/
@@ -362,46 +365,93 @@ iframe {
 
 .detalle-container {
   display: flex;
-  flex-wrap: wrap;        /* permite que las columnas se apilen en pantallas pequeñas */
+  flex-wrap: wrap;
+  /* permite que las columnas se apilen en pantallas pequeñas */
   gap: 20px;
-  align-items: center; 
+  align-items: center;
   padding: 0 20px;
 }
 
 .detalle-imagen {
   padding-top: 20px;
-  flex: 1;                 /* ocupa parte del espacio */
+  flex: 1;
+  /* ocupa parte del espacio */
   padding-bottom: 30px;
   text-align: center;
 }
 
 .detalle-imagen img {
-  width: 100%;             /* la imagen ocupa todo el ancho de su columna */
-  max-width: 400px;        /* límite para que no sea gigante */
+  width: 100%;
+  /* la imagen ocupa todo el ancho de su columna */
+  max-width: 400px;
+  /* límite para que no sea gigante */
   border-radius: 8px;
 }
 
 .detalle-info {
-  flex: 1;                 /* ocupa el resto del espacio */
+  flex: 1;
+  /* ocupa el resto del espacio */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 50px; /* centra verticalmente el contenido */
+  padding-right: 50px;
+  /* centra verticalmente el contenido */
+  background:
+    linear-gradient(#e78bde71, rgba(170, 230, 233, 0.603));
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/*boton que redirecciona a producto*/
+.btn-redondeado {
+  display: flexbox;
+  background-color: #33ccd1;
+  color: #fff;
+  padding: 80px 20px 40px 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 100px;
+}
+
+.btn-redondeado {
+  display: flex;
+  /* mejor que flexbox */
+  justify-content: center;
+  /* centra el texto */
+  align-items: center;
+  /* centra el texto vertical */
+  background-color: #33ccd1;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration:dotted;
+  transition: background-color 0.3s ease;
+  margin-top: 100px;
+  background: linear-gradient(180deg, #5be3e89a, #e436cf9d)
+}
+
+.btn-redondeado:hover {
+  background-color: #e080f1;
 }
 
 .detalle-info button {
-  background-color: #cc3366;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.detalle-info {
-  background:
-    linear-gradient(#94778b33, rgba(231, 145, 205, 0.9));
+  background-color: #e080f1;
   color: #fff;
   border: none;
   padding: 8px 16px;
@@ -411,6 +461,9 @@ iframe {
 }
 
 
+.precio {
+  font-size: x-large;
+}
 
 .contenedor-productos {
   display: grid;
@@ -421,10 +474,14 @@ iframe {
 }
 
 .card-producto {
-  width: 20rem;              /* Tamaño fijo aproximado */
-  max-width: 300px;          /* Limite de ancho en pantallas chicas */
-  border: 1px solid #ef93ff; /* Unificamos el borde al de la segunda */
-  padding: 20px;             /* Usamos el padding mayor */
+  width: 20rem;
+  /* Tamaño fijo aproximado */
+  max-width: 300px;
+  /* Limite de ancho en pantallas chicas */
+  border: 1px solid #ef93ff;
+  /* Unificamos el borde al de la segunda */
+  padding: 20px;
+  /* Usamos el padding mayor */
   margin: 10px;
   background-color: white;
   text-align: center;
@@ -436,8 +493,6 @@ iframe {
 }
 
 .card-producto:hover {
-  transform: translateY(-5px); /* Efecto al pasar el mouse */
+  transform: translateY(-5px);
+  /* Efecto al pasar el mouse */
 }
-
-
-
