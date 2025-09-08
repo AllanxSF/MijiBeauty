@@ -399,6 +399,19 @@ iframe {
   margin-top: 10px;
 }
 
+.detalle-info {
+  background:
+    linear-gradient(#94778b33, rgba(231, 145, 205, 0.9));
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+
 .contenedor-productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
