@@ -1,7 +1,10 @@
+/*menu deinicio*/
 .navbar {
-  background-color: #ce95b1;
-  /* Rosado pastel */
+  background-color: #b9829d;
+  opacity: 90%;
+
 }
+
 
 .logo-left {
   height: 90px;
@@ -21,12 +24,11 @@
   font-weight: bold;
   font-size: 1.5rem;
   color: #cc3366 !important;
-  /* Rosa fuerte */
+
 }
 
 .nav-link {
   color: #66334d !important;
-  /* Vino suave */
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -38,7 +40,6 @@
 .dropdown-menu {
   border-radius: 1rem;
   background-color: #fff0f5;
-  /* Lila pastel */
 }
 
 .dropdown-item:hover {
@@ -46,7 +47,7 @@
   color: #cc3366;
 }
 
-/* Botón Mi Cuenta */
+
 .btn-account {
   border-radius: 20px;
   background-color: #cc3366;
@@ -62,7 +63,7 @@
   color: #fff;
 }
 
-/* Botón Buscar */
+
 .btn-outline-success {
   border-radius: 20px;
   border-color: #cc3366;
@@ -75,8 +76,29 @@
 }
 
 input.form-control {
-  border-radius: 20px;
+  border-radius: 20px;  
 }
+
+/*titulos de la pagina*/
+h1 {
+  font-size: xx-large;
+  color: #7a1147;
+  text-align: center;
+  background-color: #f3f0f2;
+  background-size: contain;
+}
+
+/*fondo*/
+body {
+  background: 
+    linear-gradient(rgba(236, 226, 233, 0.2), rgba(236, 226, 233, 0.9)), 
+    url('img/Fondo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*pie de pagina */
 
 footer {
   background-color: #ef93ff;
@@ -87,11 +109,11 @@ footer {
   position: relative;
   margin-top: auto;
 }
-
-.card,
+/*pestaña contacto */
 .card-contacto,
 .card-servicio {
-  margin: 0 !important;
+  margin: 20 !important;
+  display: flexbox;
 }
 
 .card-contacto {
@@ -170,8 +192,9 @@ footer {
   margin-bottom: 20px;
 }
 
-.obligatorio{
+abbr[title="Campo Obligatorio"] {
   color: red;
+
 }
 
 .titulo-producto {
@@ -248,4 +271,56 @@ footer {
 
 .card-totalp{
   padding: 20px;
+
+  /* Cambia el color del asterisco */
+}
+
+.contenedor-grid-inicio {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.input {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.contenedor-grid-restablecer {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+::placeholder {
+  color: #C09BC0 !important;
+}
+/*pestaña datos*/
+.contenedor-datos{
+  width: 400px auto;
+  height: 400px auto;
+  background-color: #f3e9f0af;
+  padding: 10px auto;
+  margin: 20px auto;
+  align-content: space-between;
+  display: inline-flexbox;
+  font-size: x-large;
+
+  align-items: center;
+}
+
+.card{
+  width: 450px;
+  height: 600px;
+  display: inline-flex;
+  margin: 60px;
+}
+
+a {
+    color: #7a1147;
+    text-decoration: underline;
+    font-weight: bold;
+
 }
