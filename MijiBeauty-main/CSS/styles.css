@@ -1,29 +1,10 @@
+/*menu deinicio*/
 .navbar {
   background-color: #b9829d;
-  /* Rosado pastel */
-}
-
-.card {
-  width: auto;
-  height: auto;
-  display: flexbox;
-  margin: 30px;
-}
-
-h1 {
-  font-size: xx-large;
-  color: #7a1147;
-  text-align: center;
-  background-color: #f3f0f2;
-  background-size: contain;
-}
-
-
-body {
-  background-color: #ece2e9;
-  background-size: cover;
+  opacity: 90%;
 
 }
+
 
 .logo-left {
   height: 90px;
@@ -82,7 +63,7 @@ body {
   color: #fff;
 }
 
-/* Botón Buscar */
+
 .btn-outline-success {
   border-radius: 20px;
   border-color: #cc3366;
@@ -95,8 +76,29 @@ body {
 }
 
 input.form-control {
-  border-radius: 20px;
+  border-radius: 20px;  
 }
+
+/*titulos de la pagina*/
+h1 {
+  font-size: xx-large;
+  color: #7a1147;
+  text-align: center;
+  background-color: #f3f0f2;
+  background-size: contain;
+}
+
+/*fondo*/
+body {
+  background: 
+    linear-gradient(rgba(236, 226, 233, 0.2), rgba(236, 226, 233, 0.9)), 
+    url('img/Fondo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*pie de pagina */
 
 footer {
   background-color: #ef93ff;
@@ -107,7 +109,7 @@ footer {
   position: relative;
   margin-top: auto;
 }
-
+/*pestaña contacto */
 .card-contacto,
 .card-servicio {
   margin: 20 !important;
@@ -192,4 +194,33 @@ footer {
 
 .obligatorio {
   color: red;
+}
+
+
+/*pestaña datos*/
+.contenedor-datos{
+  width: 400px auto;
+  height: 400px auto;
+  background-color: #f3e9f0af;
+  padding: 10px auto;
+  margin: 20px auto;
+  align-content: space-between;
+  display: inline-flexbox;
+  font-size: x-large;
+
+  align-items: center;
+}
+
+.card{
+  width: 450px;
+  height: 600px;
+  display: inline-flex;
+  margin: 60px;
+}
+
+a {
+    color: #7a1147;
+    text-decoration: underline;
+    font-weight: bold;
+    
 }
