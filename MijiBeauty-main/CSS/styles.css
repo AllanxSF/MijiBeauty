@@ -192,10 +192,32 @@ footer {
   margin-bottom: 20px;
 }
 
-.obligatorio {
+abbr[title="Campo Obligatorio"] {
   color: red;
+  /* Cambia el color del asterisco */
 }
 
+.contenedor-grid-inicio {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.input {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.contenedor-grid-restablecer {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+::placeholder {
+  color: #C09BC0 !important;
 
 /*pestaña datos*/
 .contenedor-datos{
@@ -222,5 +244,5 @@ a {
     color: #7a1147;
     text-decoration: underline;
     font-weight: bold;
-    
+
 }
