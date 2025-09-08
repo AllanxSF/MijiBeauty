@@ -100,14 +100,28 @@ body {
 
 /*pie de pagina */
 
+/* Footer */
 footer {
-  background-color: #ef93ff;
-  color: #fff;
-  padding: 20px 0;
+  background-color: #92e0ee;
+  color: white;
   text-align: center;
-  width: 100%;
-  position: relative;
-  margin-top: auto;
+  padding: 15px 10px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-links a {
+  color: #cc3366;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.p-footer {
+  color: #222;
 }
 
 /*pestaña contacto */
@@ -233,7 +247,6 @@ abbr[title="Campo Obligatorio"] {
 
 .card-img-producto {
   width: 100%;
-  /* esto adaptara y usara todo el espacio que tiene disponible por el tamaño de la card*/
   height: 200px;
   object-fit: cover;
   display: block;
@@ -273,8 +286,6 @@ abbr[title="Campo Obligatorio"] {
 
 .card-totalp {
   padding: 20px;
-
-  /* Cambia el color del asterisco */
 }
 
 .contenedor-grid-inicio {
@@ -324,5 +335,11 @@ a {
   color: #7a1147;
   text-decoration: underline;
   font-weight: bold;
+}
 
+/*video*/
+iframe {
+  width: 1100px;
+  height: 1000px;
+  align-self: center;
 }
