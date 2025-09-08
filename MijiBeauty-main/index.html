@@ -15,16 +15,72 @@
 
     <main class="container mt-5">
         <h1>Principal</h1>
-        <p>hhi</p>
+        <p></p>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Menu Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="producto.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Blog.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="datos.html">Datos Curiosos</a></li>
+                            <li><a class="dropdown-item" href="consejos.html">Consejos de Belleza</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="blog.html">Blog Principal</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <!-- Barra de busqueda -->
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+
+                <!-- Mi cuenta -->
+                <a class="btn btn-outline-primary" href="micuenta.html">Mi Cuenta</a>
+
+            </div>
+        </div>
+    </nav>
+
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 미지 Beauty. Todos los derechos reservados.</p>
-            <div class="footer-links">
-                <a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad</a>
+        <div id="footer"></div>
+            <div class="footer-content">
+                <p>&copy; 2025 미지 Beauty. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad</a>
+                </div>
             </div>
-        </div>
+        
     </footer>
 
     <script src="JS/navbar.js"></script>
