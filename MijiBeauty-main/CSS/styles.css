@@ -210,15 +210,22 @@ abbr[title="Campo Obligatorio"] {
   text-align: center;
   font-size: 25px;
   font-weight: 500;
-  color: gray;
+  color: black;
 }
 
 .card-producto {
   width: 20rem;
-  border: 0.5px solid #333;
+  border: 0.5px solid #ef93ff;
   padding: 20px;
   margin: 10px;
-  height: 450px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 10px;
+
 }
 
 .card-title-producto {
@@ -325,4 +332,60 @@ a {
   text-decoration: underline;
   font-weight: bold;
 
+}
+
+.container-fluid{
+  align-items: center;
+
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;       /* permite que las cards bajen a otra fila si no caben */
+  justify-content: center; /* centra horizontalmente las cards */
+  gap: 20px;             /* espacio entre tarjetas */
+  padding: 20px;
+}
+
+.card-producto {
+  width: 280px;           /* ancho fijo de cada card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* botón al fondo */
+}
+
+.detalle-container {
+  display: flex;
+  flex-wrap: wrap;        /* permite que las columnas se apilen en pantallas pequeñas */
+  gap: 20px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.detalle-imagen {
+  flex: 1;                 /* ocupa parte del espacio */
+  padding-left: 20px;
+}
+
+.detalle-imagen img {
+  width: 100%;             /* la imagen ocupa todo el ancho de su columna */
+  max-width: 400px;        /* límite para que no sea gigante */
+  border-radius: 8px;
+}
+
+.detalle-info {
+  flex: 1;                 /* ocupa el resto del espacio */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente el contenido */
+}
+
+.detalle-info button {
+  background-color: #cc3366;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
