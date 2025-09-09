@@ -496,3 +496,14 @@ iframe {
   transform: translateY(-5px);
   /* Efecto al pasar el mouse */
 }
+
+.btn-carrito {
+  position: relative;
+  display: inline-block;
+  margin-left: 1rem;
+  color: #0c0900; /* Color del ícono, puedes cambiarlo */
+  border: 1px solid #cc3366;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+} 
