@@ -1,4 +1,4 @@
-/*menu deinicio*/
+/*menu de inicio*/
 .navbar {
   background-color: #b9829d;
   opacity: 90%;
@@ -83,8 +83,6 @@ h1 {
 }
 
 /*fondo*/
-
-/* Asegura que html y body ocupen toda la altura */
 html,
 body {
   height: 100%;
@@ -96,7 +94,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* ocupa toda la pantalla */
   background:
     linear-gradient(rgba(236, 226, 233, 0.2), rgba(236, 226, 233, 0.9)),
     url('img/Fondo.jpg');
@@ -106,7 +103,6 @@ body {
 
 main {
   flex: 1;
-  /* fuerza a que main ocupe el espacio disponible */
   padding: 20px;
 }
 
@@ -475,10 +471,10 @@ iframe {
 
 .contenedor-carrito {
   display: flex;
-  flex-direction: column; 
-  gap: 20px;              
+  flex-direction: column;
+  gap: 20px;
   padding: 20px;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 /* tarjeta del carrito */
@@ -489,11 +485,11 @@ iframe {
   border-radius: 10px;
   padding: 15px;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   gap: 15px;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-carrito:hover {
