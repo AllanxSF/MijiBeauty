@@ -328,7 +328,7 @@ abbr[title="Campo Obligatorio"] {
   margin: 60px;
 }
 
-a{
+a {
   color: #7a1147;
   text-decoration: underline;
   font-weight: bold;
@@ -466,10 +466,52 @@ iframe {
   text-decoration: none;
 }
 
+
 /*nosotros*/
-.card mb-3{
-height: 600px;
-width: 800px;
+#img-nosotros {
+  width: 60%;
+  height: 0%;
+  margin: 10%;
 }
 
+h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
+p {
+  color: #585858;
+  line-height: 1.6;
+  text-align: center;
+  font-size: large;
+}
+
+.section-nosotros {
+  background: #fce4ecbd;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.seccion-final {
+  background: #fce4ec;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.seccion-final h2 {
+  font-size: 1.9rem;
+  color: #222;
+}
+
+.seccion-final p {
+  color: #444;
+  line-height: 1.7;
+}
+
+.seccion-final .btn {
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+}
