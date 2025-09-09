@@ -255,11 +255,9 @@ const productos = [
     },
 ]
 
-
 document.addEventListener("DOMContentLoaded", function () {
     renderProduct();
 })
-
 
 function renderProduct() {
     const parametor = new URLSearchParams(window.location.search);
@@ -288,19 +286,13 @@ function renderProduct() {
 
 /* Carrito */
 
-
-// Función para agregar productos al carrito
 function agregarAlCarrito(event) {
     const idBoton = event.currentTarget.getAttribute("id-producto");
-
-    // Obtener carrito desde localStorage
     let carrito = JSON.parse(localStorage.getItem("producto-en-carrito")) || [];
 
-    // Buscar producto a agregar
     const productoAgregado = productos.find(p => p.id == idBoton);
     if (!productoAgregado) return;
 
-    // Revisar si ya existe en el carrito
     const index = carrito.findIndex(p => p.id == idBoton);
 
     if (index !== -1) {
@@ -309,15 +301,12 @@ function agregarAlCarrito(event) {
         carrito.push({ ...productoAgregado, cantidad: 1 });
     }
 
-    // Guardar carrito actualizado
     localStorage.setItem("producto-en-carrito", JSON.stringify(carrito));
-
-    // Actualizar numerito y mostrar carrito
     actualizarNumerito();
     mostrarCarrito();
 }
 
-// Actualiza el contador del carrito
+
 function actualizarNumerito() {
     const contador = document.querySelector("#numCarrito");
     const carrito = JSON.parse(localStorage.getItem("producto-en-carrito")) || [];
@@ -325,7 +314,7 @@ function actualizarNumerito() {
     contador.innerText = total;
 }
 
-// Muestra el carrito
+
 function mostrarCarrito() {
     const contenedor = document.getElementById("carrito-contenedor");
     const carrito = JSON.parse(localStorage.getItem("producto-en-carrito")) || [];
@@ -360,10 +349,7 @@ function mostrarCarrito() {
 }
 
 function vaciarCarrito() {
-    // Borra todo del localStorage
     localStorage.removeItem("producto-en-carrito");
-
-    // Actualiza la UI
     mostrarCarrito();
     actualizarNumerito();
 }

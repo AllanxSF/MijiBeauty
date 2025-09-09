@@ -473,24 +473,23 @@ iframe {
   width: 800px;
 }
 
-/* contenedor del carrito */
-/* contenedor del carrito en columna */
 .contenedor-carrito {
   display: flex;
-  flex-direction: column; /* los ordena de arriba hacia abajo */
-  gap: 20px;              /* espacio entre tarjetas */
+  flex-direction: column; 
+  gap: 20px;              
   padding: 20px;
-  align-items: flex-start; /* 👈 alinea las tarjetas a la izquierda */
+  align-items: flex-start; 
 }
 
 /* tarjeta del carrito */
+
 .card-carrito {
   background-color: #fff;
   border: 1px solid #ef93ff;
   border-radius: 10px;
   padding: 15px;
   display: flex;
-  justify-content: space-between; /* separa info e imagen */
+  justify-content: space-between; 
   align-items: center;
   gap: 15px;
   width: 100%;
