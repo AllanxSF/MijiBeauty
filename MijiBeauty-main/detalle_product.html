@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
+    <title>Detalle producto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS\styles.css">
 </head>
@@ -20,23 +20,48 @@
                     <div class="borde-det-producto">
                         <img id="imagen-producto"src="" class="img-det-product"alt="imagen-producto">
                     </div>
-            </div>
-                <span id="precio-producto" class="precio-productos"></span>
-                    <p id="descripcion-producto"></p>
 
-                <select class="form-select">
+    <main class="detalle-producto">
+        <div class="detalle-container">
+            <!-- Imagen -->
+            <div class="detalle-imagen">
+                <h2 id="nombre-producto">Nombre del Producto</h2>
+                <img id="imagen-producto" src="CSS/img/producto1.webp" alt="Producto">
+
+            </div>
+
+            <!-- Información -->
+            <div class="detalle-info">
+                
+                
+                <p id="descripcion-producto">
+                    Esta es la descripción del producto.
+                </p>
+
+                <p class="precio"><span id="precio-producto"></span></p>
+                
+
+                <select>
                     <option selected>Cantidad</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
+
                 <button type="button" class="btn-añadir-carrito" >Añadir al carrito</button>
+
+
+                <button>Añadir al carrito</button>
+            </div>
+
         </div>
-    </div>
     </main>
+
+
 
 </body>
 <script src="js/main.js"></script>
 <script src="JS/navbar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
