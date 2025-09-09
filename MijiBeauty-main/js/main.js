@@ -206,49 +206,49 @@ const productos = [
     {
         id: 3,
         nombre: "Tónico Facial 1025 Dokdo Toner",
-        precio: "10.590",
+        precio: "10590",
         descripcion: "El Tónico Facial 1025 Dokdo Toner de Round Lab es un tónico coreano que exfolia suavemente, hidrata y calma la piel, siendo apto para todo tipo de piel. Contiene agua de mar profunda, extracto de alga roja, caña de azúcar, pantenol, alantoína y betaína, que ayudan a mantener la humedad, reducir brotes y suavizar la piel. Su textura ligera se absorbe rápido sin dejar residuos, y se aplica después de la limpieza facial, por la mañana o noche, para preparar la piel antes de sueros o cremas. Está disponible en tiendas online como Linio Chile y Mercado Libre Chile.",
         imagen: "CSS/img/producto3.webp"
     },
     {
         id: 4,
         nombre: "ROUND LAB Dokdo Cream",
-        precio: "32.600",
+        precio: "32600",
         descripcion: "La ROUND LAB 1025 Dokdo Cream es una crema hidratante coreana diseñada para pieles secas y sensibles. Su fórmula combina triple ácido hialurónico y cinco tipos de ceramidas para proporcionar hidratación profunda y fortalecer la barrera cutánea. Enriquecida con minerales del agua de mar profunda de Ulleungdo, ayuda a calmar la piel irritada y a mantener la hidratación durante todo el día. Su textura tipo bálsamo se absorbe fácilmente, dejando la piel suave y flexible.",
         imagen: "CSS/img/producto4.webp"
     },
     {
         id: 5,
         nombre: "KAHl Balm Coreano",
-        precio: "5.390",
+        precio: "5390",
         descripcion: "El KAHI Wrinkle Bounce Multi Balm es un bálsamo multifuncional coreano que combina los beneficios de un hidratante, crema para ojos, bálsamo labial y base de maquillaje en un solo producto. Formulado con un complejo de salmón, colágeno y PDRN, este bálsamo ofrece potentes beneficios antienvejecimiento y puede ayudar a estimular la producción de colágeno para restaurar la elasticidad de la piel. Además, está infundido con aceite fermentado natural de Jeju para mejorar la absorción y prevenir que el maquillaje se seque o se agriete durante el día. Su fórmula de rápida absorción proporciona hidratación duradera y puede ayudar a reducir la apariencia de líneas finas y arrugas, dejándote con una piel más suave y luminosa.",
         imagen: "CSS/img/producto5.webp"
     },
     {
         id: 6,
         nombre: "Aceite Limpiador ANUA",
-        precio: "21.089",
+        precio: "21089",
         descripcion: "El Aceite Limpiador ANUA Heartleaf Pore Control es un limpiador facial coreano que calma la piel, reduce poros dilatados e hidrata gracias a su combinación de extracto de heartleaf y aceites vegetales, siendo apto para todo tipo de piel, incluso sensible y propensa al acné.",
         imagen: "CSS/img/producto6.webp"
     },
     {
         id: 7,
         nombre: "PHA 30 Days Miracle Serum",
-        precio: "23.990",
+        precio: "23990",
         descripcion: "El SOME BY MI AHA BHA PHA 30 Days Miracle Serum es un suero bifásico coreano diseñado para pieles propensas al acné. Combina un 10,000 ppm de agua de hoja de árbol de té y un 14.5% de extracto de centella asiática para calmar la piel, reducir la inflamación y fortalecer la barrera cutánea. Además, incorpora AHA, BHA y PHA para exfoliar suavemente, eliminar células muertas y mejorar la textura de la piel. Su fórmula es libre de 20 ingredientes artificiales y tiene un pH de 5.5, adecuado para pieles sensibles.",
         imagen: "CSS/img/producto7.webp"
     },
     {
         id: 8,
         nombre: "Bouncy & Firm Sleeping Mask Mini",
-        precio: "3.990",
+        precio: "3990",
         descripcion: "La Laneige Bouncy & Firm Sleeping Mask Mini es una mascarilla de noche coreana diseñada para revitalizar y reafirmar la piel mientras duermes. Su fórmula contiene el complejo Peony & Collagen™ con péptidos, que ayuda a reducir la apariencia de líneas finas y a mejorar la elasticidad de la piel. Además, incluye cápsulas Hydro-Melt Glow que protegen la barrera cutánea, ácido hialurónico para una hidratación profunda y un lisado probiótico de té verde que aporta luminosidad. Su textura tipo sorbete se funde al aplicarla, dejando la piel suave y luminosa al despertar.",
         imagen: "CSS/img/producto8.webp"
     },
     {
         id: 9,
         nombre: "Cosrx Advanced Snail 96 Mucin Essencer",
-        precio: "18.239",
+        precio: "18239",
         descripcion: "El Cosrx Advanced Snail 96 Mucin Power Essence es un sérum coreano que contiene un 96% de filtrado de secreción de caracol, conocido por sus propiedades regeneradoras y calmantes. Este producto hidrata profundamente la piel, mejora su textura, reduce manchas oscuras y líneas finas, y fortalece la barrera cutánea, todo sin dejar sensación pegajosa. Es adecuado para todo tipo de piel, incluyendo las sensibles, y se utiliza después de la limpieza y tonificación, aplicando una pequeña cantidad en el rostro y dando ligeros toques para facilitar su absorción.",
         imagen: "CSS/img/producto9.webp"
 
