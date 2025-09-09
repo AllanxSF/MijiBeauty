@@ -279,7 +279,6 @@ function renderProduct(){
 
 /* Carrito */
 const productosCarrito = [];
-const numCarrito = document.querySelector("#numCarrito");
 
 function agregarAlCarrito(event){
 
