@@ -199,7 +199,7 @@ const productos = [
     {
         id: 2,
         nombre: "Limpiador Facial Fresh Green Rice Mochi Cleanser",
-        precio: "20.000",
+        precio: "20000",
         descripcion: "Limpiador facial enriquecido con agua y polvo de arroz que elimina eficazmente la suciedad y las impurezas de la piel sin quitarle humedad. Los extractos de hamamelis e hisopo en la fórmula proporcionan efectos iluminadores y calmantes. El limpiador se elabora mediante un proceso tradicional de amasado para obtener una textura similar al mochi que desobstruye los poros y purifica la piel a fondo.",
         imagen: "CSS/img/producto2.webp"
     },
@@ -287,35 +287,90 @@ function renderProduct() {
 };
 
 /* Carrito */
-const productosCarrito = JSON.parse(localStorage.getItem("producto-en-carrito")) || [];
 
+
+// Función para agregar productos al carrito
 function agregarAlCarrito(event) {
-
     const idBoton = event.currentTarget.getAttribute("id-producto");
-    console.log('idBoton:', idBoton);
 
+    // Obtener carrito desde localStorage
+    let carrito = JSON.parse(localStorage.getItem("producto-en-carrito")) || [];
+
+    // Buscar producto a agregar
     const productoAgregado = productos.find(p => p.id == idBoton);
+    if (!productoAgregado) return;
 
-    if (productosCarrito.some(p => p.id === idBoton)) {
-        const index = productosCarrito.findIndex(p => p.id === idBoton);
-        productosCarrito[index].cantidad++;
+    // Revisar si ya existe en el carrito
+    const index = carrito.findIndex(p => p.id == idBoton);
+
+    if (index !== -1) {
+        carrito[index].cantidad++;
     } else {
-        productosCarrito.push({ ...productoAgregado, cantidad: 1 });
+        carrito.push({ ...productoAgregado, cantidad: 1 });
     }
 
-    console.log("Carrito actual:", productosCarrito);
+    // Guardar carrito actualizado
+    localStorage.setItem("producto-en-carrito", JSON.stringify(carrito));
 
+    // Actualizar numerito y mostrar carrito
     actualizarNumerito();
-    localStorage.setItem("producto-en-carrito", JSON.stringify(productosCarrito));
-    console.log("Carrito en localStorage:", JSON.parse(localStorage.getItem("producto-en-carrito")));
+    mostrarCarrito();
 }
 
+// Actualiza el contador del carrito
 function actualizarNumerito() {
     const contador = document.querySelector("#numCarrito");
-    let total = productosCarrito.reduce((acc, p) => acc + p.cantidad, 0);
+    const carrito = JSON.parse(localStorage.getItem("producto-en-carrito")) || [];
+    let total = carrito.reduce((acc, p) => acc + p.cantidad, 0);
     contador.innerText = total;
-    console.log(productosCarrito)
 }
+
+// Muestra el carrito
+function mostrarCarrito() {
+    const contenedor = document.getElementById("carrito-contenedor");
+    const carrito = JSON.parse(localStorage.getItem("producto-en-carrito")) || [];
+    contenedor.innerHTML = "";
+
+    if (carrito.length === 0) {
+        contenedor.innerHTML = "<p>El carrito está vacío 🛒</p>";
+        document.getElementById("total").innerText = "$0";
+        return;
+    }
+
+    let total = 0;
+
+    carrito.forEach(p => {
+        const card = document.createElement("div");
+        card.classList.add("card-carrito");
+        card.innerHTML = `
+            <img src="${p.imagen}" alt="${p.nombre}">
+            <div class="info-card">
+                <h3>${p.nombre}</h3>
+                <p>Precio: $${p.precio}</p>
+                <p>Cantidad: ${p.cantidad}</p>
+                <p class="subtotal">Subtotal: $${p.precio * p.cantidad}</p>
+            </div>
+        `;
+        contenedor.appendChild(card);
+
+        total += p.precio * p.cantidad;
+    });
+
+    document.getElementById("total").innerText = "$" + total;
+}
+
+function vaciarCarrito() {
+    // Borra todo del localStorage
+    localStorage.removeItem("producto-en-carrito");
+
+    // Actualiza la UI
+    mostrarCarrito();
+    actualizarNumerito();
+}
+
+const botonVaciar = document.getElementById("vaciar-carrito");
+botonVaciar.addEventListener("click", vaciarCarrito);
+
 
 
 

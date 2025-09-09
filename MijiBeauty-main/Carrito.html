@@ -11,45 +11,36 @@
 
 <body>
     <div id="navbar"></div>
+
+
+
     <main id="Carrito" class="container mt-5">
         <h1 class="titulo-carrito">Mi carrito de compras</h1>
         <h2 class="subtitulo-carrito">Aquí podrás ver y gestionar tu carrito de compras</h2>
-        <p id="carrito-vacio" class="carrito-vacío"> El carrito está vacío. </p>
-        
-        <div class="row">
-            <div class="col-md-4">
-                <div id="card-carrito" class="card mb-4">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body-carrito">
-                                <h3 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                        <button class="btn btn-primary" type="button">+</button>
-                                        <button class="btn btn-primary" type="button">-</button>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
+
+        <div id="carrito-contenedor" class="contenedor-carrito"></div>
+        <p class="total">Total: <span id="total"></span></p>
+
+
+
+
+
+
+
+
         </div>
-        <div id="detalle-card" class="col-md-4">
-            <div class="card p-3">
-                <h4>TOTAL</h4>
-                <span id="precio-total" class="precio-total-carrito">milmillonesa</span>
-                <p class="mb-3">Introduzca codigo de descuento</p>
-                <input type="text">
-            </div>
-        </div>
+        <button id="vaciar-carrito" class="btn btn-danger">Vaciar carrito</button>
     </main>
     <footer id="footer"></footer>
 </body>
-
+<script>
+    // Ejecuta al cargar la página
+    document.addEventListener("DOMContentLoaded", () => {
+        mostrarCarrito();
+    });
+</script>
 <script src="JS/navbar.js"></script>
 <script src="js/footer.js"></script>
 <script src="js/main.js"></script>>
