@@ -239,40 +239,6 @@ abbr[title="Campo Obligatorio"] {
 }
 
 .subtitulo-producto {
-
-      text-align: center;    
-      font-size: 25px;       
-      font-weight: 500;        
-      color: gray;             
-  }
-
-.card-producto{
-    width: 20rem;
-    border: 0.5px solid #333;
-    padding: 20px;
-    margin: 10px;
-    height: 450px;
-  }
-
-.card-title-producto{
-    text-align: center;
-  }
-
-.card-text-producto{
-    text-align: center;
-    margin-top: 10px;
-    overflow: hidden;
-}
-
-.card-img-producto{
-    width: 100%; /* esto adaptara y usara todo el espacio que tiene disponible por el tamaño de la card jejej*/
-    height: 200px;
-    object-fit: cover;
-    display: block;
-}
-
-.borde-det-producto{
-=======
   text-align: center;
   font-size: 25px;
   font-weight: 500;
@@ -309,15 +275,9 @@ abbr[title="Campo Obligatorio"] {
   display: block;
 }
 
-
-#card-carrito{
-   width: 450px;
-   height: auto;
-
 #card-carrito {
   width: 540px;
   padding: 20px;
-
 }
 
 #detalle-card {
@@ -325,28 +285,12 @@ abbr[title="Campo Obligatorio"] {
   position: absolute;
   top: 100px;
   right: 0;
-  width: 400px;
+  width: 300px;
 }
 
-
-.btn-carrito {
-  position: relative;
-  display: inline-block;
-  margin-left: 1rem;
-  color: #0c0900; /* Color del ícono, puedes cambiarlo */
-  border: 1px solid #cc3366;
-  border-radius: 5px;
-  padding: 0.5rem 0.75rem;
-  text-decoration: none;
-}    
-.subtitulo-carrito{
-  font-size: 18px;       
-  font-weight: 500;        
-=======
 .subtitulo-carrito {
   font-size: 18px;
   font-weight: 500;
-
   color: gray;
 }
 
