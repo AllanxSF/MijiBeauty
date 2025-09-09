@@ -2,14 +2,11 @@
 .navbar {
   background-color: #b9829d;
   opacity: 90%;
-
 }
-
 
 .logo-left {
   height: 90px;
   border-radius: 50%;
-
 }
 
 .logo-fixed {
@@ -24,7 +21,6 @@
   font-weight: bold;
   font-size: 1.5rem;
   color: #cc3366 !important;
-
 }
 
 .nav-link {
@@ -47,7 +43,6 @@
   color: #cc3366;
 }
 
-
 .btn-account {
   border-radius: 20px;
   background-color: #cc3366;
@@ -62,7 +57,6 @@
   background-color: #b02a57;
   color: #fff;
 }
-
 
 .btn-outline-success {
   border-radius: 20px;
@@ -99,7 +93,6 @@ body {
 }
 
 body {
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -141,7 +134,6 @@ footer {
   margin-bottom: 5px;
 }
 
-
 /*pestaña contacto */
 .card-contacto,
 .card-servicio {
@@ -167,7 +159,6 @@ footer {
   box-shadow: 0 0 20px #ef93ff;
   padding: 30px;
   overflow: hidden;
-
 }
 
 .card-title-formulario {
@@ -181,13 +172,11 @@ footer {
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
-
 }
 
 .p-contacto {
   margin-top: 10px;
   text-align: center;
-
 }
 
 .centrar-mail {
@@ -218,7 +207,6 @@ footer {
   box-shadow: 0 0 20px #ef93ff;
   padding: 30px;
   overflow: hidden;
-
 }
 
 .card-title-registro {
@@ -227,7 +215,6 @@ footer {
 
 abbr[title="Campo Obligatorio"] {
   color: red;
-
 }
 
 .titulo-producto {
@@ -341,7 +328,7 @@ abbr[title="Campo Obligatorio"] {
   margin: 60px;
 }
 
-a {
+a{
   color: #7a1147;
   text-decoration: underline;
   font-weight: bold;
@@ -366,7 +353,6 @@ iframe {
 .detalle-container {
   display: flex;
   flex-wrap: wrap;
-  /* permite que las columnas se apilen en pantallas pequeñas */
   gap: 20px;
   align-items: center;
   padding: 0 20px;
@@ -375,27 +361,22 @@ iframe {
 .detalle-imagen {
   padding-top: 20px;
   flex: 1;
-  /* ocupa parte del espacio */
   padding-bottom: 30px;
   text-align: center;
 }
 
 .detalle-imagen img {
   width: 100%;
-  /* la imagen ocupa todo el ancho de su columna */
   max-width: 400px;
-  /* límite para que no sea gigante */
   border-radius: 8px;
 }
 
 .detalle-info {
   flex: 1;
-  /* ocupa el resto del espacio */
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 50px;
-  /* centra verticalmente el contenido */
   background:
     linear-gradient(#e78bde71, rgba(170, 230, 233, 0.603));
   color: #fff;
@@ -408,28 +389,11 @@ iframe {
 }
 
 
-/*boton que redirecciona a producto*/
-.btn-redondeado {
-  display: flexbox;
-  background-color: #33ccd1;
-  color: #fff;
-  padding: 80px 20px 40px 20px;
-  border: none;
-  border-radius: 100px;
-  cursor: pointer;
-  font-size: 16px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  margin-top: 100px;
-}
-
+/*principal boton que redirecciona a producto*/
 .btn-redondeado {
   display: flex;
-  /* mejor que flexbox */
   justify-content: center;
-  /* centra el texto */
   align-items: center;
-  /* centra el texto vertical */
   background-color: #33ccd1;
   color: #fff;
   width: 200px;
@@ -440,7 +404,7 @@ iframe {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  text-decoration:dotted;
+  text-decoration: dotted;
   transition: background-color 0.3s ease;
   margin-top: 100px;
   background: linear-gradient(180deg, #5be3e89a, #e436cf9d)
@@ -460,7 +424,6 @@ iframe {
   margin-top: 10px;
 }
 
-
 .precio {
   font-size: x-large;
 }
@@ -475,13 +438,9 @@ iframe {
 
 .card-producto {
   width: 20rem;
-  /* Tamaño fijo aproximado */
   max-width: 300px;
-  /* Limite de ancho en pantallas chicas */
   border: 1px solid #ef93ff;
-  /* Unificamos el borde al de la segunda */
   padding: 20px;
-  /* Usamos el padding mayor */
   margin: 10px;
   background-color: white;
   text-align: center;
@@ -494,16 +453,15 @@ iframe {
 
 .card-producto:hover {
   transform: translateY(-5px);
-  /* Efecto al pasar el mouse */
 }
 
 .btn-carrito {
   position: relative;
   display: inline-block;
   margin-left: 1rem;
-  color: #0c0900; /* Color del ícono, puedes cambiarlo */
+  color: #0c0900;
   border: 1px solid #cc3366;
   border-radius: 5px;
   padding: 0.5rem 0.75rem;
   text-decoration: none;
-} 
+}
