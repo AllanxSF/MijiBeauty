@@ -73,6 +73,7 @@ function limpiarR() {
     telefono.value = "";
     contraseña.value = "";
     contraseña2.value = "";
+
 }
 
 function validar_contacto() {
@@ -190,112 +191,107 @@ function validar_recuperar() {
 
 /* js productos*/
 const productos = [
-    {
-        id: 1,
+        {id: 1,
         nombre: "Pink Peptide Eye Cream",
         precio: "25000",
         descripcion: "La crema de ojos PDRN Pink Peptide es un tratamiento innovador diseñado para combatir los signos del envejecimiento en la zona ocular. Su fórmula combina PDRN (Ácido Desoxirribonucleico Polinucleotídico), que estimula la reparación celular y mejora la elasticidad de la piel, con péptidos biomiméticos que actúan como un botox natural, reduciendo la aparición de arrugas. Además, contiene ácido hialurónico para una hidratación intensa y niacinamida para mejorar la textura de la piel. Esta crema es ideal para todo tipo de piel y se recomienda su uso diario para obtener mejores resultados.",
         imagen: "CSS/img/producto1.webp"
     },
-    {
-        id: 2,
+        {id: 2,
         nombre: "Limpiador Facial Fresh Green Rice Mochi Cleanser",
         precio: "20.000",
         descripcion: "Limpiador facial enriquecido con agua y polvo de arroz que elimina eficazmente la suciedad y las impurezas de la piel sin quitarle humedad. Los extractos de hamamelis e hisopo en la fórmula proporcionan efectos iluminadores y calmantes. El limpiador se elabora mediante un proceso tradicional de amasado para obtener una textura similar al mochi que desobstruye los poros y purifica la piel a fondo.",
         imagen: "CSS/img/producto2.webp"
     },
-    {
-        id: 3,
+        {id: 3, 
         nombre: "Tónico Facial 1025 Dokdo Toner",
         precio: "10.590",
         descripcion: "El Tónico Facial 1025 Dokdo Toner de Round Lab es un tónico coreano que exfolia suavemente, hidrata y calma la piel, siendo apto para todo tipo de piel. Contiene agua de mar profunda, extracto de alga roja, caña de azúcar, pantenol, alantoína y betaína, que ayudan a mantener la humedad, reducir brotes y suavizar la piel. Su textura ligera se absorbe rápido sin dejar residuos, y se aplica después de la limpieza facial, por la mañana o noche, para preparar la piel antes de sueros o cremas. Está disponible en tiendas online como Linio Chile y Mercado Libre Chile.",
         imagen: "CSS/img/producto3.webp"
     },
-    {
-        id: 4,
+        {id: 4,
         nombre: "ROUND LAB Dokdo Cream",
         precio: "32.600",
         descripcion: "La ROUND LAB 1025 Dokdo Cream es una crema hidratante coreana diseñada para pieles secas y sensibles. Su fórmula combina triple ácido hialurónico y cinco tipos de ceramidas para proporcionar hidratación profunda y fortalecer la barrera cutánea. Enriquecida con minerales del agua de mar profunda de Ulleungdo, ayuda a calmar la piel irritada y a mantener la hidratación durante todo el día. Su textura tipo bálsamo se absorbe fácilmente, dejando la piel suave y flexible.",
         imagen: "CSS/img/producto4.webp"
     },
-    {
-        id: 5,
+        {id: 5, 
         nombre: "KAHl Balm Coreano",
         precio: "5.390",
         descripcion: "El KAHI Wrinkle Bounce Multi Balm es un bálsamo multifuncional coreano que combina los beneficios de un hidratante, crema para ojos, bálsamo labial y base de maquillaje en un solo producto. Formulado con un complejo de salmón, colágeno y PDRN, este bálsamo ofrece potentes beneficios antienvejecimiento y puede ayudar a estimular la producción de colágeno para restaurar la elasticidad de la piel. Además, está infundido con aceite fermentado natural de Jeju para mejorar la absorción y prevenir que el maquillaje se seque o se agriete durante el día. Su fórmula de rápida absorción proporciona hidratación duradera y puede ayudar a reducir la apariencia de líneas finas y arrugas, dejándote con una piel más suave y luminosa.",
         imagen: "CSS/img/producto5.webp"
     },
-    {
-        id: 6,
+        {id: 6,
         nombre: "Aceite Limpiador ANUA",
         precio: "21.089",
         descripcion: "El Aceite Limpiador ANUA Heartleaf Pore Control es un limpiador facial coreano que calma la piel, reduce poros dilatados e hidrata gracias a su combinación de extracto de heartleaf y aceites vegetales, siendo apto para todo tipo de piel, incluso sensible y propensa al acné.",
         imagen: "CSS/img/producto6.webp"
     },
-    {
-        id: 7,
+        {id: 7,
         nombre: "PHA 30 Days Miracle Serum",
         precio: "23.990",
         descripcion: "El SOME BY MI AHA BHA PHA 30 Days Miracle Serum es un suero bifásico coreano diseñado para pieles propensas al acné. Combina un 10,000 ppm de agua de hoja de árbol de té y un 14.5% de extracto de centella asiática para calmar la piel, reducir la inflamación y fortalecer la barrera cutánea. Además, incorpora AHA, BHA y PHA para exfoliar suavemente, eliminar células muertas y mejorar la textura de la piel. Su fórmula es libre de 20 ingredientes artificiales y tiene un pH de 5.5, adecuado para pieles sensibles.",
         imagen: "CSS/img/producto7.webp"
     },
-    {
-        id: 8,
+        {id: 8,
         nombre: "Bouncy & Firm Sleeping Mask Mini",
         precio: "3.990",
         descripcion: "La Laneige Bouncy & Firm Sleeping Mask Mini es una mascarilla de noche coreana diseñada para revitalizar y reafirmar la piel mientras duermes. Su fórmula contiene el complejo Peony & Collagen™ con péptidos, que ayuda a reducir la apariencia de líneas finas y a mejorar la elasticidad de la piel. Además, incluye cápsulas Hydro-Melt Glow que protegen la barrera cutánea, ácido hialurónico para una hidratación profunda y un lisado probiótico de té verde que aporta luminosidad. Su textura tipo sorbete se funde al aplicarla, dejando la piel suave y luminosa al despertar.",
         imagen: "CSS/img/producto8.webp"
     },
-    {
-        id: 9,
+        {id: 9,
         nombre: "Cosrx Advanced Snail 96 Mucin Essencer",
         precio: "18.239",
         descripcion: "El Cosrx Advanced Snail 96 Mucin Power Essence es un sérum coreano que contiene un 96% de filtrado de secreción de caracol, conocido por sus propiedades regeneradoras y calmantes. Este producto hidrata profundamente la piel, mejora su textura, reduce manchas oscuras y líneas finas, y fortalece la barrera cutánea, todo sin dejar sensación pegajosa. Es adecuado para todo tipo de piel, incluyendo las sensibles, y se utiliza después de la limpieza y tonificación, aplicando una pequeña cantidad en el rostro y dando ligeros toques para facilitar su absorción.",
         imagen: "CSS/img/producto9.webp"
 
-    },
+    },   
 ]
 
-document.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded", function() {
     renderProduct();
 })
 
-function renderProduct() {
-    const parametor = new URLSearchParams(window.location.search);
-    const idProducto = parametor.get("id");
-    const productoEncontrado = productos.find(p => p.id == idProducto);
 
-    if (productoEncontrado) {
+function renderProduct(){
+  const parametor = new URLSearchParams(window.location.search);
+  const idProducto = parametor.get("id");
+  const productoEncontrado = productos.find(p => p.id == idProducto);
 
-        document.getElementById("nombre-producto").textContent = productoEncontrado.nombre;
-        document.getElementById("imagen-producto").src = productoEncontrado.imagen;
-        document.getElementById("precio-producto").textContent = "$" + productoEncontrado.precio;
-        document.getElementById("descripcion-producto").textContent = productoEncontrado.descripcion;
+  if (productoEncontrado) {
 
-        const botonAgregar = document.querySelector(".btn-añadir-carrito");
-        botonAgregar.setAttribute("id-producto", productoEncontrado.id);
+    document.getElementById("nombre-producto").textContent = productoEncontrado.nombre;
+    document.getElementById("imagen-producto").src = productoEncontrado.imagen;
+    document.getElementById("precio-producto").textContent = "$" + productoEncontrado.precio;
+    document.getElementById("descripcion-producto").textContent = productoEncontrado.descripcion;
 
-        botonAgregar.setAttribute("id-producto", productoEncontrado.id);
+    const botonAgregar = document.querySelector(".btn-añadir-carrito");
+    console.log(botonAgregar)
+    
+    botonAgregar.setAttribute("id-producto", productoEncontrado.id);
 
-        } else {
+    botonAgregar.addEventListener("click", agregarAlCarrito);
+    
+  } else {
 
-        document.getElementById("detalle-producto").textContent = "Producto no encontrado";
-    }
+    document.getElementById("tituloProducto").innerText = "Producto no encontrado";
+  }
 };
 
 /* Carrito */
 const productosCarrito = JSON.parse(localStorage.getItem("producto-en-carrito")) || [];
 
-function agregarAlCarrito(event) {
+function agregarAlCarrito(event){
 
     const idBoton = event.currentTarget.getAttribute("id-producto");
     console.log('idBoton:', idBoton);
 
     const productoAgregado = productos.find(p => p.id == idBoton);
 
-    if (productosCarrito.some(p => p.id == idBoton)) {
-        const index = productosCarrito.findIndex(p => p.id == idBoton)
-        productosCarrito[index].cantidad++;
+    if (productosCarrito.some(p => p.id === idBoton)) {
+    const index = productosCarrito.findIndex(p => p.id === idBoton);
+    productosCarrito[index].cantidad++;
     } else {
     productosCarrito.push({ ...productoAgregado, cantidad: 1 });
     }
@@ -304,9 +300,10 @@ function agregarAlCarrito(event) {
 
     actualizarNumerito();
     localStorage.setItem("producto-en-carrito", JSON.stringify(productosCarrito));
+    console.log("Carrito en localStorage:", JSON.parse(localStorage.getItem("producto-en-carrito")));
 }
 
-function actualizarNumerito() {
+function actualizarNumerito(){
     const contador = document.querySelector("#numCarrito");
     let total = productosCarrito.reduce((acc, p) => acc + p.cantidad, 0);
     contador.innerText = total;
