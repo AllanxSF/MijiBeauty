@@ -59,8 +59,6 @@ function validar_registro() {
         console.log("Correos registrados:", correosR);
         console.log("Direcciones registradas:", direcionR);
         console.log("Telefonos registrados:", telefonoR);
-        console.log("Contraseñas registradas:", contraseñasR);
-        console.log("Confirmaciones registradas:", contraseñas2R);
         alert("IRegistro existoso");
         limpiarR();
     }
