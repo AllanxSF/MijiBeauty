@@ -267,36 +267,40 @@ function renderProduct(){
     document.getElementById("descripcion-producto").textContent = productoEncontrado.descripcion;
 
     const botonAgregar = document.querySelector(".btn-añadir-carrito");
+    console.log(botonAgregar)
+    
     botonAgregar.setAttribute("id-producto", productoEncontrado.id);
 
     botonAgregar.addEventListener("click", agregarAlCarrito);
     
   } else {
 
-    document.getElementById("detalle-producto").textContent = "Producto no encontrado";
+    document.getElementById("tituloProducto").innerText = "Producto no encontrado";
   }
 };
 
 /* Carrito */
-const productosCarrito = [];
+const productosCarrito = JSON.parse(localStorage.getItem("producto-en-carrito")) || [];
 
 function agregarAlCarrito(event){
 
     const idBoton = event.currentTarget.getAttribute("id-producto");
+    console.log('idBoton:', idBoton);
+
     const productoAgregado = productos.find(p => p.id == idBoton);
 
-    if(productosCarrito.some(p => p.id == idBoton)){
-        const index = productosCarrito.findIndex(p => p.id == idBoton)
-        productosCarrito[index].cantidad++;
+    if (productosCarrito.some(p => p.id === idBoton)) {
+    const index = productosCarrito.findIndex(p => p.id === idBoton);
+    productosCarrito[index].cantidad++;
     } else {
-        productoAgregado.cantidad = 1;
-        productosCarrito.push(productoAgregado);
+    productosCarrito.push({ ...productoAgregado, cantidad: 1 });
     }
 
-    actualizarNumerito();
+    console.log("Carrito actual:", productosCarrito);
 
+    actualizarNumerito();
     localStorage.setItem("producto-en-carrito", JSON.stringify(productosCarrito));
-    
+    console.log("Carrito en localStorage:", JSON.parse(localStorage.getItem("producto-en-carrito")));
 }
 
 function actualizarNumerito(){
@@ -305,5 +309,6 @@ function actualizarNumerito(){
     contador.innerText = total;
     console.log(productosCarrito)
 }
+
 
 
