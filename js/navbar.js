@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("navbar.html")
+    fetch("/html/navbar.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error("No se pudo cargar el navbar");
